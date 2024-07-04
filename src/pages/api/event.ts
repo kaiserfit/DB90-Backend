@@ -86,9 +86,9 @@ export default async function Handler(
         test_event_code: req.body.test_event_code ? req.body.test_event_code : null,
       };
       const fbGraphAPIVersion = "v19.0";
-      const fbPixelId = 750058010411363;
+      const fbPixelId = 443928198558527;
       const accessToken =
-      "EABuuVzivfngBO7u3Wgfzrs6dSHBKodcvZCXmoom8ZBeaQ6XFTSkrZBVizTyHF2WnYLy9LTRsQTOwhRIz6BJ3gRZCjUwai3tR2JJUPMuRXp8L1ZAnOjZA9fFSPK6V07V1ewjoxNUQkOEdwiZABDZCMeLUTedMH7l26YeyniLFxSxBLmVuCYLnNyIuqjto6d46CFQFHgZDZD";
+      "EAAJhQXrBBMgBOx1mp1yN4AQZBVcZAha6RsCcTbDJ8v4sK1fcjNNmOvN5ZCoNnoOY18uRqc8fvXEF9UIm9ALeRF8h9akAnZBvBsfRyY8uR2ce0q73PGZAm8NyqyrFZAsyG4eyrgN2wcgl8IZAyMA3CTHotXa8fSB7fEAf4sPenImv2QTc0autIuZCmmhDKt9pgmsFZAwZDZD";
       const response = await fetch(
         `https://graph.facebook.com/${fbGraphAPIVersion}/${fbPixelId}/events?access_token=${accessToken}`,
         {
